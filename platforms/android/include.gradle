@@ -8,4 +8,12 @@ android {
 
 dependencies {
     compile 'com.google.android.gms:play-services-gcm:9.2.0'
+    compile 'com.microsoft.azure:notification-hubs-android-sdk:0.4@aar'
+    compile 'com.microsoft.azure:azure-notifications-handler:1.0.1@aar'
 }
+
+ repositories {
+     maven {
+         url "http://dl.bintray.com/microsoftazuremobile/SDK"
+     }
+ }
