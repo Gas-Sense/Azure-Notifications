@@ -37,6 +37,13 @@
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
+			<receiver android:name="com.microsoft.windowsazure.notifications.NotificationsBroadcastReceiver"
+					android:permission="com.google.android.c2dm.permission.SEND">
+				<intent-filter>
+					<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+					<category android:name="com.tns.NativeScriptApplication" />
+				</intent-filter>
+			</receiver>
 		</activity>
 		<activity android:name="com.tns.ErrorReportActivity"/>
 	</application>
